@@ -13,13 +13,13 @@
     "publishConfig": {
         "access": "public"
     },
-    "homepage": "https://github.com/BoxLab-Ltd/yandex-mcp-core#readme",
+    "homepage": "https://github.com/DZamataev/yandex-mcp-core#readme",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/BoxLab-Ltd/yandex-mcp-core.git"
+        "url": "git+https://github.com/DZamataev/yandex-mcp-core.git"
     },
     "bugs": {
-        "url": "https://github.com/BoxLab-Ltd/yandex-mcp-core/issues"
+        "url": "https://github.com/DZamataev/yandex-mcp-core/issues"
     },
     "type": "module",
     "engines": {
@@ -42,6 +42,7 @@
         "lint": "eslint .",
         "format": "prettier --write .",
         "test": "bun test",
+        "prepare": "tsc -p tsconfig.build.json",
         "prepublishOnly": "npm run build"
     },
     "dependencies": {
